@@ -1,0 +1,33 @@
+.container {
+    max-width: 120rem;
+    // Why max-width ? So that the container can decrease when there is not enough space to display 120rem.
+    // If the width of the viewport os less that 120rem then we simply occupy the 1000% width of the viewport.
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
+
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;
+    // flex: (flex-grow) (flex-shrink) (flex basis)
+    //0 no shrink and no grow basis => width
+}
+
+.hotel-view {
+    background-color: #fff;
+    flex: 1; // Element should grow as it can. // remaining 82%
+}

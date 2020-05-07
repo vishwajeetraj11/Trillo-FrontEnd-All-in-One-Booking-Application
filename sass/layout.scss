@@ -10,10 +10,15 @@
 }
 
 .header {
+    font-size:  1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2);
-
+    border-bottom: 1px solid var(--color-grey-light-2);
+    display: flex;
+    // Justify Content - Along the main axis
+    justify-content: space-between;
+    // Align Items - Along the cross axis
+    align-items: center;
 }
 
 .content {
@@ -23,6 +28,9 @@
 .sidebar {
     background-color: var(--color-grey-dark-1);
     flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     // flex: (flex-grow) (flex-shrink) (flex basis)
     //0 no shrink and no grow basis => width
 }
@@ -30,4 +38,31 @@
 .hotel-view {
     background-color: #fff;
     flex: 1; // Element should grow as it can. // remaining 82%
+
 }
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+    
+}
+
+.description {
+   
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+.user-reviews {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
